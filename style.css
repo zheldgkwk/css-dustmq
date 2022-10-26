@@ -1,0 +1,44 @@
+body {
+  margin:0;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  border-bottom: 3px solid green;
+  margin:0;
+  padding:20px;
+}
+#grid ol /*grid라는 id밑에 속한 ol에 한정한다는 뜻, 띄어쓰기 하나면 된다*/
+{
+  border-right: 3px solid green;
+  width:100px;
+  margin:0;
+  padding:20px;
+  padding-left: 40px;
+}
+
+  #grid {
+    display: grid;
+    grid-template-columns: 150px 1fr
+  }
+  #article {
+    margin-left: 30px;
+  }
+  #article2 {
+    margin-left: 50px;
+  }
+  @media(max-width:800px){
+    #grid {
+      display: block; /*block=block level element(예시:div태그)*/
+    }
+    #grid ol {
+      /*border 값이 지정되ㅇ 있으므로 새로운 적용값을 일일이 지정해줘야함.
+      지정해주지 않으면 미디어쿼리 밖에 있는 내용 적용됨*/border-right: none;
+      width:100%;
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr;/*왠지 이거 아닌거 같은데 일단 효과는 나타났으니까 괜찮은가?이대로 괜찮은가?*/
+      border-bottom: 3px solid green;
+      padding:10px;
+      padding-left: 30px;
+    }
+  }

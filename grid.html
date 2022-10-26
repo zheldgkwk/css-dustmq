@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>그리드</title>
+    <!--
+    <style>
+      #grid {
+        border:5px green solid;
+        grid-template-columns: 150px 1fr;
+        /*grid-template 쓰기 전에 display를 grid로 지정해주어야 합니다. 안하면 안통함*/
+        display: grid;
+      }
+      div {
+        border:5px grey solid;
+        /*여기서도 마찬가지로 grid로 지정 안해놓으면 grid-template안통함*/
+      }
+    </style>
+  </head>
+
+  <body>
+  <div id="grid">
+    <div>NAVIGATION</div>
+    <div>ARTICLE</div>
+  </div>
+  </body>
+</html>
+여기까지 10장-->
+    <link rel="stylesheet" href="style.css"><!--/css/style.css가 아니야?-->
+  </head>
+
+  <body>
+    <h1><a href="index.html" style="color:grey; text-decoration:none;">WEB</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html"=>html</a></li>
+        <a href="2.html"><li>css</li></a>
+        <li><a href="3.html">javascript</li></a>
+      </ol>
+
+      <div id="article">
+        <h2>CSS란 무엇인가</h2>
+        <p>
+          그건 나도 모른다
+          종속형 시트 또는 캐스케이딩 스타일 시트<u>(영어: Cascading Style Sheet)</u>는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어(영어: Style sheet language 스타일 시트 랭귀지[*])로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다.
+          W3C의 표준이고, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
